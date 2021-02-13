@@ -1,0 +1,92 @@
+<!--
+File: popup.html
+=========================
+This file contains the HTML visible in the browser action,
+which is the window that pops up when you click the icon
+in the upper right corner of the Chrome window. Update this
+HTML file to change the layout of the content if you'd like!
+Currently, it is the TreeHacks banner.
+
+The file doesn't need to be updated for the hackpack, but
+making it look stylish can be a cool extension.
+-->
+
+<!DOCTYPE html>
+<html>
+
+<style>
+body {
+  font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+        font-size: 100%;
+  position: relative;
+  vertical-align:center;
+  /* background-image: url(/icons/TreeHacksCoverPhoto.png); */
+  /* background-size: 100% 100%;
+  min-width: 600px;
+  min-height: 200px; */
+  width:300px;
+  height:400px;
+  background-color: white;
+}
+img {
+  width: 30px;
+  padding: 5px;
+}
+
+.default-button {
+  background-color: wheat; 
+  border: none;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.default-button:hover {
+  background-color: rgb(199, 154, 71); 
+  border: none;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+
+</style >
+
+<body>
+  <div class="container">
+    <!-- Make the header elements of current container -->
+    <div class="header">
+      <h2>
+        <img src="../icons/hibiscus.png" alt="icon-main"> 
+        NameHere
+      </h2>
+
+      <!-- Create log-in button -->
+      <hr>
+        <div class="in-line">
+          <button id="log-in" class="default-button">Personalize</button>
+          <button id="check-item" class="default-button">Check item</button>
+        </div>
+      <hr>
+
+      <!-- We can display the problematic ingredients here? -->
+      <div class="food-content">
+        <p> Ingredients to avoid on this page. </p>
+
+
+      </div>
+
+    </div>
+
+
+  </div> 
+  
+  <!-- do stuff -->
+
+
+<script src="popup.js" ></script>
+
+</body>
+</html>
