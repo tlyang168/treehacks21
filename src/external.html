@@ -14,29 +14,42 @@ body {
   min-height: 200px; */
   /* width:300px;
   height:400px; */
-  background-color: white;
-}
-img {
-  width: 30px;
-  padding: 5px;
+  background-color: #FFF5E8;
+  margin:auto;
 }
 
-.default-button {
-  background-color: wheat; 
-  border: none;
-  padding: 10px;
+#header-icon {
+  width: 300px;
+}
+
+#hero-image {
+  align: center;
+  max-width: 100%;
+  height: auto;
+}
+
+.sign-up {
+  margin-top: 2%;
+  margin-right: 10%;
+  float: right;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-}
-
-.default-button:hover {
-  background-color: rgb(199, 154, 71); 
+  border-radius: 20px;
+  transition: ease-in-out 0.2s;
+  color: #41638f;
   border: none;
   padding: 10px;
+  width: 150px;
+  height: 50px;
+  background-color: #96b0d3;
+  font-size: 20px;
+
+}
+
+.header {
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
+  padding: 20px;
 }
 
 
@@ -46,15 +59,23 @@ img {
   <div class="container">
     <!-- Make the header elements of current container -->
     <div class="header">
-      <h2>
-        <img src="../icons/hibiscus.png" alt="icon-main"> 
-        NameHere
-      </h2>
-      <p> Insert slogan and description here</p>
+      <img src="../icons/treehacks_logo_lettering.png" alt="icon-main" id="header-icon"> 
+      <button class="sign-up">Sign up</button>
+    </div>
+    <div class="hero-image">
+      <img src="../icons/blueberries_lettering.png" alt="blueberries" id="hero-image">
     </div>
 
 
   </div> 
+  <!-- <form>
+    <div>
+      <label> Food </label>
+      <input type="text" id="food-item">
+    </div>
+    <button id="submit">Submit</button>
+  </form>
+  <script src="results.js"></script> -->
   
   <!-- do stuff -->
 
